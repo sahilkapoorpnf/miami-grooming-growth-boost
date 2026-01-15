@@ -4,6 +4,7 @@ import HeroSlide from "@/components/slides/HeroSlide";
 import ProblemSlide from "@/components/slides/ProblemSlide";
 import SolutionSlide from "@/components/slides/SolutionSlide";
 import FeaturesSlide from "@/components/slides/FeaturesSlide";
+import TimelineCostSlide from "@/components/slides/TimelineCostSlide";
 import BeforeAfterSlide from "@/components/slides/BeforeAfterSlide";
 import BitdecentroHelpSlide from "@/components/slides/BitdecentroHelpSlide";
 import FutureSlide from "@/components/slides/FutureSlide";
@@ -15,6 +16,7 @@ const slides = [
   ProblemSlide,
   SolutionSlide,
   FeaturesSlide,
+  TimelineCostSlide,
   BeforeAfterSlide,
   BitdecentroHelpSlide,
   FutureSlide,

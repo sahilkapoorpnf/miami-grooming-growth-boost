@@ -153,8 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Trigger confetti when investment slide is visible (now slide-8)
-  const investmentSlide = document.getElementById('slide-8');
+  // Trigger confetti when investment slide is visible (now slide-9)
+  const investmentSlide = document.getElementById('slide-9');
   let confettiTriggered = false;
   
   const investmentObserver = new IntersectionObserver((entries) => {
