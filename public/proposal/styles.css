@@ -1,4 +1,4 @@
-/* CSS Variables - Miami Pet Grooming Brand Colors (matching React version) */
+/* CSS Variables - Miami Pet Grooming Brand Colors (matching React version exactly) */
 :root {
   /* Vibrant Pink/Magenta - Brand Primary */
   --primary: 330 85% 55%;
@@ -167,18 +167,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.5);
 }
 
-/* Glass Effect */
+/* Glass Effect - EXACT match with React */
 .glass {
-  background: hsla(0 0% 100% / 0.8);
+  background: hsl(0 0% 100% / 0.8);
   backdrop-filter: blur(20px);
-  border: 1px solid hsla(0 0% 100% / 0.3);
+  border: 1px solid hsl(0 0% 100% / 0.3);
   border-radius: var(--radius);
 }
 
 .glass-dark {
-  background: hsla(210 25% 15% / 0.8);
+  background: hsl(210 25% 15% / 0.8);
   backdrop-filter: blur(20px);
-  border: 1px solid hsla(0 0% 100% / 0.1);
+  border: 1px solid hsl(0 0% 100% / 0.1);
   border-radius: var(--radius);
 }
 
@@ -206,48 +206,15 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: text;
 }
 
-/* Blobs */
+/* Blobs - Decorative Shapes (matching React exactly) */
 .blob {
   position: absolute;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  filter: blur(40px);
-  animation: float 6s ease-in-out infinite;
 }
 
-.blob-1 {
-  width: 8rem;
-  height: 8rem;
-  background: hsl(var(--primary) / 0.1);
-  top: 5rem;
-  left: 2.5rem;
-}
-
-.blob-2 {
-  width: 12rem;
-  height: 12rem;
-  background: hsl(var(--secondary) / 0.1);
-  bottom: 5rem;
-  right: 5rem;
+.blob-alt {
+  position: absolute;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-  animation-delay: 2s;
-}
-
-.blob-3 {
-  width: 10rem;
-  height: 10rem;
-  background: hsl(var(--primary) / 0.08);
-  top: 50%;
-  right: 15%;
-  animation-delay: 4s;
-}
-
-.blob-4 {
-  width: 9rem;
-  height: 9rem;
-  background: hsl(var(--secondary) / 0.08);
-  bottom: 20%;
-  left: 10%;
-  animation-delay: 3s;
 }
 
 /* Badges */
@@ -306,9 +273,115 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0.5rem;
 }
 
-/* ============ HERO SLIDE ============ */
+/* ============ ANIMATIONS (matching React exactly) ============ */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-20px) rotate(5deg); 
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px hsl(330 85% 55% / 0.3); 
+  }
+  50% { 
+    box-shadow: 0 0 40px hsl(330 85% 55% / 0.6); 
+  }
+}
+
+@keyframes slide-up {
+  from { 
+    opacity: 0; 
+    transform: translateY(40px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0) translateX(-50%); }
+  50% { transform: translateY(-10px) translateX(-50%); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-slide-up {
+  opacity: 0;
+  animation: slide-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-scale-in {
+  opacity: 0;
+  animation: scale-in 0.6s ease-out forwards;
+}
+
+.animate-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+/* Staggered animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }
+
+/* ============ HERO SLIDE (matching React HeroSlide.tsx) ============ */
 .slide-hero {
   background: linear-gradient(135deg, hsl(var(--primary) / 0.05), hsl(var(--background)), hsl(var(--secondary) / 0.05));
+}
+
+.slide-hero .blob-1 {
+  width: 8rem;
+  height: 8rem;
+  background: hsl(var(--primary) / 0.1);
+  top: 5rem;
+  left: 2.5rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.slide-hero .blob-2 {
+  width: 12rem;
+  height: 12rem;
+  background: hsl(var(--secondary) / 0.1);
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
 }
 
 .paw-decoration {
@@ -389,20 +462,20 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.hero-image .image-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, hsl(var(--primary) / 0.3), transparent);
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
 .hero-image img {
   max-width: 24rem;
   width: 100%;
   border-radius: 1.5rem;
   position: relative;
   z-index: 10;
-}
-
-.image-glow {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, hsl(var(--primary) / 0.3), transparent);
-  border-radius: 50%;
-  filter: blur(60px);
 }
 
 .scroll-hint {
@@ -414,7 +487,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.875rem;
 }
 
-/* ============ PROBLEM SLIDE ============ */
+/* ============ PROBLEM SLIDE (matching React ProblemSlide.tsx) ============ */
 .slide-problem {
   background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--foreground) / 0.95), hsl(var(--primary) / 0.2));
   color: hsl(var(--primary-foreground));
@@ -495,7 +568,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-/* ============ SOLUTION SLIDE ============ */
+/* ============ SOLUTION SLIDE (matching React SolutionSlide.tsx) ============ */
 .slide-solution {
   background: linear-gradient(135deg, hsl(var(--background)), hsl(var(--muted) / 0.5), hsl(var(--secondary) / 0.1));
 }
@@ -516,18 +589,18 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.image-blur-bg {
+.solution-image .image-blur-bg {
   position: absolute;
   inset: -1rem;
   background: linear-gradient(to right, hsl(var(--primary) / 0.2), hsl(var(--secondary) / 0.2));
   border-radius: 1.5rem;
-  filter: blur(30px);
+  filter: blur(40px);
 }
 
 .solution-image img {
   position: relative;
-  width: 100%;
   border-radius: 1rem;
+  width: 100%;
 }
 
 .solutions-list {
@@ -538,7 +611,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .solution-card {
   padding: 1.5rem;
-  border-radius: 1rem;
   display: flex;
   gap: 1.5rem;
 }
@@ -551,13 +623,18 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   color: hsl(var(--primary-foreground));
+  flex-shrink: 0;
+}
+
+.solution-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .solution-content h3 {
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
 }
 
 .solution-content ul {
@@ -571,9 +648,10 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--muted-foreground));
   display: flex;
   align-items: center;
+  gap: 0.5rem;
 }
 
-/* ============ BEFORE/AFTER SLIDE ============ */
+/* ============ BEFORE/AFTER SLIDE (matching React BeforeAfterSlide.tsx) ============ */
 .slide-beforeafter {
   background: linear-gradient(135deg, hsl(var(--muted)), hsl(var(--background)), hsl(var(--primary) / 0.05));
 }
@@ -581,17 +659,25 @@ h1, h2, h3, h4, h5, h6 {
 .beforeafter-image {
   position: relative;
   max-width: 56rem;
-  margin: 0 auto 3rem;
+  margin: 0 auto;
+}
+
+.beforeafter-image .image-blur-bg {
+  position: absolute;
+  inset: -1.5rem;
+  background: linear-gradient(to right, hsl(var(--primary) / 0.2), hsl(var(--accent) / 0.2), hsl(var(--secondary) / 0.2));
+  border-radius: 1.5rem;
+  filter: blur(40px);
 }
 
 .beforeafter-image img {
   position: relative;
-  width: 100%;
   border-radius: 1rem;
+  width: 100%;
 }
 
-.label-before,
-.label-after {
+.beforeafter-image .label-before,
+.beforeafter-image .label-after {
   position: absolute;
   bottom: 1.5rem;
   padding: 0.5rem 1rem;
@@ -600,12 +686,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-.label-before {
+.beforeafter-image .label-before {
   left: 1.5rem;
   color: hsl(var(--muted-foreground));
 }
 
-.label-after {
+.beforeafter-image .label-after {
   right: 1.5rem;
   background: hsl(var(--primary) / 0.9);
   color: hsl(var(--primary-foreground));
@@ -615,7 +701,7 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   gap: 1.5rem;
   max-width: 56rem;
-  margin: 0 auto;
+  margin: 2rem auto 0;
 }
 
 @media (min-width: 768px) {
@@ -654,9 +740,30 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--muted-foreground));
 }
 
-/* ============ FUTURE SLIDE ============ */
+/* ============ FUTURE SLIDE (matching React FutureSlide.tsx) ============ */
 .slide-future {
   background: linear-gradient(135deg, hsl(var(--secondary) / 0.1), hsl(var(--background)), hsl(var(--primary) / 0.1));
+}
+
+.slide-future .blob-2 {
+  width: 16rem;
+  height: 16rem;
+  background: hsl(var(--secondary) / 0.1);
+  bottom: 5rem;
+  right: 5rem;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.slide-future .blob-3 {
+  width: 12rem;
+  height: 12rem;
+  background: hsl(var(--primary) / 0.08);
+  top: 50%;
+  right: 15%;
+  animation: float 6s ease-in-out infinite;
+  animation-delay: 4s;
 }
 
 .future-layout {
@@ -681,7 +788,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.future-content > h3 {
+.future-content h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -689,7 +796,6 @@ h1, h2, h3, h4, h5, h6 {
 .future-features-grid {
   display: grid;
   gap: 1rem;
-  margin-bottom: 2rem;
 }
 
 @media (min-width: 640px) {
@@ -703,7 +809,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem;
-  border-radius: 0.75rem;
 }
 
 .future-feature-icon {
@@ -714,36 +819,32 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
   color: hsl(var(--primary-foreground));
+  flex-shrink: 0;
 }
 
 .future-feature span {
   font-weight: 500;
 }
 
-.why-matters-box {
+.why-box {
+  margin-top: 2rem;
   padding: 1.5rem;
   border-radius: 1rem;
   border: 2px solid hsl(var(--primary) / 0.2);
   background: hsl(var(--primary) / 0.05);
 }
 
-.why-matters-box h4 {
+.why-box h4 {
   font-size: 1.125rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 1rem;
-  color: hsl(var(--foreground));
 }
 
-.why-matters-box h4 svg {
-  color: hsl(var(--primary));
-}
-
-.why-matters-box ul {
+.why-box ul {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -751,12 +852,17 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--muted-foreground));
 }
 
-.why-matters-box li {
+.why-box li {
   display: flex;
   align-items: flex-start;
+  gap: 0.5rem;
 }
 
-.future-mockup {
+.why-box li .bullet {
+  margin-top: 0.5rem;
+}
+
+.future-image {
   position: relative;
   display: flex;
   justify-content: center;
@@ -764,12 +870,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
-  .future-mockup {
+  .future-image {
     order: 2;
   }
 }
 
-.mockup-glow {
+.future-image .image-glow {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, hsl(var(--secondary) / 0.3), hsl(var(--primary) / 0.3));
@@ -777,7 +883,7 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(60px);
 }
 
-.future-mockup img {
+.future-image img {
   position: relative;
   z-index: 10;
   max-width: 24rem;
@@ -785,7 +891,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 1.5rem;
 }
 
-/* ============ DELIVERABLES SLIDE ============ */
+/* ============ DELIVERABLES SLIDE (matching React DeliverablesSlide.tsx) ============ */
 .slide-deliverables {
   background: linear-gradient(135deg, hsl(var(--primary) / 0.05), hsl(var(--background)), hsl(var(--accent) / 0.1));
 }
@@ -801,18 +907,18 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.deliverables-list {
+.deliverables-card {
   padding: 2rem;
   border-radius: 1.5rem;
 }
 
-.deliverables-list h3 {
+.deliverables-card h3 {
   font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: hsl(var(--primary));
+  margin-bottom: 1.5rem;
 }
 
 .deliverables-grid {
@@ -832,7 +938,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 0.75rem;
 }
 
-.check-icon {
+.deliverable-check {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -844,15 +950,16 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--primary));
 }
 
-.impact-section h3 {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
-}
-
-.impact-grid {
+.impact-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.impact-list h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .impact-card {
@@ -887,64 +994,73 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(var(--muted-foreground));
 }
 
-/* ============ INVESTMENT SLIDE ============ */
+/* ============ INVESTMENT SLIDE (matching React InvestmentSlide.tsx) ============ */
 .slide-investment {
   background: linear-gradient(135deg, hsl(var(--foreground)), hsl(var(--foreground) / 0.95), hsl(var(--primary) / 0.3));
   color: hsl(var(--primary-foreground));
 }
 
-.slide-investment .section-header h2 {
-  color: hsl(var(--primary-foreground));
+.slide-investment .blob-1 {
+  width: 16rem;
+  height: 16rem;
+  background: hsl(var(--primary) / 0.2);
+  top: 5rem;
+  right: 5rem;
+  filter: blur(60px);
+}
+
+.slide-investment .blob-2 {
+  width: 12rem;
+  height: 12rem;
+  background: hsl(var(--secondary) / 0.2);
+  bottom: 5rem;
+  left: 5rem;
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+  filter: blur(60px);
+}
+
+.investment-box {
+  max-width: 42rem;
+  margin: 0 auto;
 }
 
 .investment-content {
+  padding: 2rem;
+  border-radius: 1.5rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-.price-card {
-  padding: 2rem;
-  max-width: 32rem;
-  width: 100%;
-  margin-bottom: 2rem;
-  text-align: center;
+  gap: 2rem;
 }
 
 @media (min-width: 768px) {
-  .price-card {
+  .investment-content {
     padding: 3rem;
   }
 }
 
-.price-label {
+.price-section .label {
   font-size: 1.125rem;
   color: hsl(var(--primary-foreground) / 0.7);
-  margin-bottom: 0.5rem;
 }
 
-.price-amount {
-  font-size: clamp(3.5rem, 8vw, 5rem);
-  font-weight: 800;
-  line-height: 1;
-  margin-bottom: 1.5rem;
+.price-section .big-price {
+  font-size: clamp(4rem, 10vw, 6rem);
+  font-weight: 700;
 }
 
-.price-divider {
+.divider {
   height: 1px;
   background: linear-gradient(to right, transparent, hsl(var(--primary-foreground) / 0.2), transparent);
-  margin-bottom: 1.5rem;
 }
 
-.price-description {
+.investment-content .description {
   font-size: 1.125rem;
   color: hsl(var(--primary-foreground) / 0.8);
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  line-height: 1.7;
 }
 
-.price-description strong {
+.investment-content .description strong {
   color: hsl(var(--primary-foreground));
 }
 
@@ -952,16 +1068,16 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: center;
 }
 
 @media (min-width: 640px) {
   .cta-buttons {
     flex-direction: row;
-    justify-content: center;
   }
 }
 
-.cta-primary {
+.btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -973,14 +1089,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 1.125rem;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
-.cta-primary:hover {
+.btn-primary:hover {
   transform: scale(1.05);
 }
 
-.cta-secondary {
+.btn-outline {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -992,126 +1108,42 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   font-size: 1.125rem;
   text-decoration: none;
-  transition: background 0.3s ease;
+  transition: background 0.2s ease;
+  background: transparent;
 }
 
-.cta-secondary:hover {
+.btn-outline:hover {
   background: hsl(var(--primary-foreground) / 0.1);
 }
 
 .footer-text {
-  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.crafted-with {
+.footer-text .crafted {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   color: hsl(var(--primary-foreground) / 0.6);
-  margin-bottom: 0.5rem;
 }
 
-.crafted-with svg {
+.footer-text .crafted svg {
   color: hsl(var(--primary));
 }
 
-.tagline {
+.footer-text .tagline {
   font-size: 0.875rem;
   color: hsl(var(--primary-foreground) / 0.4);
 }
 
-/* ============ ANIMATIONS ============ */
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(5deg); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(330 85% 55% / 0.3); }
-  50% { box-shadow: 0 0 40px hsl(330 85% 55% / 0.6); }
-}
-
-@keyframes slide-up {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes scale-in {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-10px); }
-}
-
-.floating {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-slide-up {
-  animation: slide-up 0.8s ease-out forwards;
-}
-
-.animate-fade-in {
-  animation: fade-in 1s ease-out forwards;
-}
-
-.animate-scale-in {
-  animation: scale-in 0.6s ease-out forwards;
-}
-
-.animate-bounce {
-  animation: bounce 2s infinite;
-}
-
-/* Staggered animations */
-.stagger-1 { animation-delay: 0.1s; }
-.stagger-2 { animation-delay: 0.2s; }
-.stagger-3 { animation-delay: 0.3s; }
-.stagger-4 { animation-delay: 0.4s; }
-.stagger-5 { animation-delay: 0.5s; }
-.stagger-6 { animation-delay: 0.6s; }
-.stagger-7 { animation-delay: 0.7s; }
-
-/* Initially hidden for animation */
-.animate-slide-up,
-.animate-fade-in,
-.animate-scale-in {
-  opacity: 0;
-}
-
-/* Confetti container */
-#confetti {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: hidden;
-  z-index: 1000;
-}
-
-/* Responsive */
+/* ============ RESPONSIVE ADJUSTMENTS ============ */
 @media (max-width: 640px) {
   .slide-nav {
-    right: 0.75rem;
+    right: 1rem;
   }
   
   .nav-arrow {
@@ -1121,5 +1153,34 @@ h1, h2, h3, h4, h5, h6 {
   .nav-dot {
     width: 6px;
     height: 6px;
+  }
+  
+  .blob {
+    display: none;
+  }
+  
+  .blob-alt {
+    display: none;
+  }
+}
+
+/* ============ CONFETTI ============ */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  z-index: 1000;
+  animation: confetti-fall 3s linear forwards;
+}
+
+@keyframes confetti-fall {
+  0% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh) rotate(720deg);
   }
 }

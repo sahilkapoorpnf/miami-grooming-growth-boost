@@ -33,14 +33,14 @@
   <!-- Slides Container -->
   <main class="slides-container" id="slidesContainer">
     
-    <!-- Slide 1: Hero -->
+    <!-- Slide 1: Hero (matching HeroSlide.tsx) -->
     <section class="slide slide-hero" id="slide-0">
       <!-- Logo -->
       <div class="logo">
         <img src="../images/bitdecentro-logo.png" alt="Bitdecentro">
       </div>
       
-      <!-- Decorative blobs -->
+      <!-- Decorative blobs (matching React) -->
       <div class="blob blob-1"></div>
       <div class="blob blob-2"></div>
       
@@ -74,7 +74,7 @@
         
         <div class="hero-image animate-scale-in">
           <div class="image-glow"></div>
-          <img src="../images/hero-dog.png" alt="Professional pet grooming" class="floating shadow-glow">
+          <img src="../images/hero-dog.png" alt="Professional pet grooming" class="animate-float shadow-glow">
         </div>
       </div>
       
@@ -83,7 +83,7 @@
       </div>
     </section>
 
-    <!-- Slide 2: Problem -->
+    <!-- Slide 2: Problem (matching ProblemSlide.tsx) -->
     <section class="slide slide-problem" id="slide-1">
       <div class="slide-content">
         <div class="section-header">
@@ -142,11 +142,8 @@
       </div>
     </section>
 
-    <!-- Slide 3: Solution -->
+    <!-- Slide 3: Solution (matching SolutionSlide.tsx) -->
     <section class="slide slide-solution" id="slide-2">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-3"></div>
-      
       <div class="slide-content">
         <div class="section-header">
           <div class="badge badge-secondary animate-fade-in">
@@ -214,7 +211,7 @@
       </div>
     </section>
 
-    <!-- Slide 4: Before/After -->
+    <!-- Slide 4: Before/After (matching BeforeAfterSlide.tsx) -->
     <section class="slide slide-beforeafter" id="slide-3">
       <div class="slide-content">
         <div class="section-header">
@@ -265,7 +262,7 @@
       </div>
     </section>
 
-    <!-- Slide 5: Future Ready -->
+    <!-- Slide 5: Future Ready (matching FutureSlide.tsx) -->
     <section class="slide slide-future" id="slide-4">
       <div class="blob blob-2"></div>
       <div class="blob blob-3"></div>
@@ -318,35 +315,42 @@
               </div>
             </div>
 
-            <div class="why-matters-box animate-fade-in stagger-6">
+            <div class="why-box animate-fade-in stagger-6">
               <h4>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(330, 85%, 55%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 Why This Matters
               </h4>
               <ul>
-                <li><span class="bullet"></span>No commission fees to third-party apps</li>
-                <li><span class="bullet"></span>No losing clients to other platforms</li>
-                <li><span class="bullet"></span>Your customer data stays 100% yours</li>
+                <li>
+                  <span class="bullet"></span>
+                  <span>No commission fees to third-party apps</span>
+                </li>
+                <li>
+                  <span class="bullet"></span>
+                  <span>No losing clients to other platforms</span>
+                </li>
+                <li>
+                  <span class="bullet"></span>
+                  <span>Your customer data stays 100% yours</span>
+                </li>
               </ul>
             </div>
           </div>
           
-          <div class="future-mockup animate-scale-in">
-            <div class="mockup-glow"></div>
-            <img src="../images/app-mockup.png" alt="Future app mockup" class="floating shadow-glow">
+          <div class="future-image animate-scale-in">
+            <div class="image-glow"></div>
+            <img src="../images/app-mockup.png" alt="Future app mockup" class="animate-float shadow-glow">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 6: Deliverables -->
+    <!-- Slide 6: Deliverables (matching DeliverablesSlide.tsx) -->
     <section class="slide slide-deliverables" id="slide-5">
-      <div class="blob blob-1"></div>
-      
       <div class="slide-content">
         <div class="section-header">
           <div class="badge badge-accent animate-fade-in">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
             <span>What You Get</span>
           </div>
           
@@ -354,98 +358,98 @@
         </div>
 
         <div class="deliverables-layout">
-          <div class="deliverables-list glass shadow-card animate-slide-up stagger-2">
+          <!-- Deliverables -->
+          <div class="deliverables-card glass shadow-card animate-slide-up stagger-2">
             <h3>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(330, 85%, 55%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               Deliverables
             </h3>
             
             <div class="deliverables-grid">
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>Modern website redesign</span>
               </div>
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>Mobile-first layout</span>
               </div>
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>Faster loading speed</span>
               </div>
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>SEO-ready structure</span>
               </div>
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>Conversion-optimized booking flow</span>
               </div>
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>Trust-building design</span>
               </div>
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>Future-ready backend structure</span>
               </div>
               <div class="deliverable-item">
-                <span class="check-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </span>
+                <div class="deliverable-check">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
                 <span>Google tracking & analytics</span>
               </div>
             </div>
           </div>
 
-          <div class="impact-section">
+          <!-- Business Impact -->
+          <div class="impact-list">
             <h3 class="animate-slide-up stagger-3">Business Impact</h3>
             
-            <div class="impact-grid">
-              <div class="impact-card shadow-card animate-slide-up stagger-4">
-                <div class="impact-icon">↑</div>
-                <div>
-                  <h4>Visitor Conversions</h4>
-                  <p>More bookings from website traffic</p>
-                </div>
+            <div class="impact-card shadow-card animate-slide-up stagger-4">
+              <div class="impact-icon">↑</div>
+              <div>
+                <h4>Visitor Conversions</h4>
+                <p>More bookings from website traffic</p>
               </div>
-              
-              <div class="impact-card shadow-card animate-slide-up stagger-5">
-                <div class="impact-icon">★</div>
-                <div>
-                  <h4>Brand Trust</h4>
-                  <p>Professional appearance builds confidence</p>
-                </div>
+            </div>
+            
+            <div class="impact-card shadow-card animate-slide-up stagger-5">
+              <div class="impact-icon">★</div>
+              <div>
+                <h4>Brand Trust</h4>
+                <p>Professional appearance builds confidence</p>
               </div>
-              
-              <div class="impact-card shadow-card animate-slide-up stagger-6">
-                <div class="impact-icon">◎</div>
-                <div>
-                  <h4>Google Visibility</h4>
-                  <p>Better SEO for local searches</p>
-                </div>
+            </div>
+            
+            <div class="impact-card shadow-card animate-slide-up stagger-6">
+              <div class="impact-icon">◎</div>
+              <div>
+                <h4>Google Visibility</h4>
+                <p>Better SEO for local searches</p>
               </div>
-              
-              <div class="impact-card shadow-card animate-slide-up stagger-7">
-                <div class="impact-icon">→</div>
-                <div>
-                  <h4>Growth Ready</h4>
-                  <p>Prepared for future online bookings</p>
-                </div>
+            </div>
+            
+            <div class="impact-card shadow-card animate-slide-up stagger-6">
+              <div class="impact-icon">→</div>
+              <div>
+                <h4>Growth Ready</h4>
+                <p>Prepared for future online bookings</p>
               </div>
             </div>
           </div>
@@ -453,15 +457,15 @@
       </div>
     </section>
 
-    <!-- Slide 7: Investment -->
+    <!-- Slide 7: Investment (matching InvestmentSlide.tsx) -->
     <section class="slide slide-investment" id="slide-6">
-      <div class="blob blob-2"></div>
-      <div class="blob blob-4"></div>
-      <div id="confetti"></div>
+      <!-- Decorative blobs -->
+      <div class="blob blob-1"></div>
+      <div class="blob-alt blob-2"></div>
       
-      <div class="slide-content investment-content">
+      <div class="slide-content">
         <div class="section-header">
-          <div class="badge animate-fade-in">
+          <div class="badge animate-fade-in" style="background: hsl(var(--primary) / 0.2);">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
             <span>Let's Get Started</span>
           </div>
@@ -469,37 +473,42 @@
           <h2 class="animate-slide-up">Ready to Transform Your Business?</h2>
         </div>
 
-        <div class="price-card glass-dark animate-scale-in stagger-2 animate-pulse-glow">
-          <p class="price-label">One-Time Investment</p>
-          <div class="price-amount text-gradient-hero">$2,500</div>
-          
-          <div class="price-divider"></div>
-          
-          <p class="price-description">
-            This is not just a redesign — it's setting up 
-            <strong>Miami's Pet Grooming</strong>
-            for growth, control, and long-term customer ownership.
-          </p>
-          
-          <div class="cta-buttons">
-            <a href="tel:+17862220592" class="cta-primary shadow-glow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              Let's Talk
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
+        <div class="investment-box">
+          <div class="investment-content glass-dark animate-scale-in stagger-2 animate-pulse-glow">
+            <div class="price-section">
+              <p class="label">One-Time Investment</p>
+              <div class="big-price text-gradient-hero">$2,500</div>
+            </div>
             
-            <a href="mailto:info@miamispetgrooming.com" class="cta-secondary">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              Email Us
-            </a>
+            <div class="divider"></div>
+            
+            <p class="description">
+              This is not just a redesign — it's setting up 
+              <strong>Miami's Pet Grooming</strong>
+              for growth, control, and long-term customer ownership.
+            </p>
+            
+            <div class="cta-buttons">
+              <a href="tel:+17862220592" class="btn-primary shadow-glow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Let's Talk
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              
+              <a href="mailto:info@miamispetgrooming.com" class="btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                Email Us
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="footer-text animate-fade-in stagger-5">
-          <div class="crafted-with">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          <div class="crafted">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             <span>Crafted with care for Miami's Pet Grooming</span>
           </div>
+          
           <p class="tagline">Pampering Your Pet Since '98</p>
         </div>
       </div>
