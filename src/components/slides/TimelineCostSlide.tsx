@@ -2,27 +2,15 @@ import { Calendar, DollarSign, CheckCircle2, Clock, Palette, Code, Rocket, Setti
 
 const phases = [
   {
-    phase: "Phase 1",
-    title: "Discovery & Strategy",
-    duration: "Week 1",
-    cost: "$400",
-    icon: Settings,
+    phase: "Milestone 1",
+    title: "Designing",
+    duration: "Week 1-2",
+    cost: "$1,250",
+    icon: Palette,
     color: "primary",
     items: [
       "Business & competitor analysis",
       "Target audience research",
-      "Content strategy planning",
-      "Brand alignment review"
-    ]
-  },
-  {
-    phase: "Phase 2",
-    title: "Design & UI/UX",
-    duration: "Week 1-2",
-    cost: "$800",
-    icon: Palette,
-    color: "accent",
-    items: [
       "Custom homepage design",
       "Service pages layout",
       "Mobile-first responsive design",
@@ -30,31 +18,19 @@ const phases = [
     ]
   },
   {
-    phase: "Phase 3",
+    phase: "Milestone 2",
     title: "Development",
     duration: "Week 2-3",
-    cost: "$900",
+    cost: "$1,250",
     icon: Code,
     color: "secondary",
     items: [
       "WordPress implementation",
       "Contact forms & CTAs",
       "SEO optimization setup",
-      "Speed & performance tuning"
-    ]
-  },
-  {
-    phase: "Phase 4",
-    title: "Launch & Support",
-    duration: "Week 3",
-    cost: "$400",
-    icon: Rocket,
-    color: "primary",
-    items: [
+      "Speed & performance tuning",
       "Quality assurance testing",
-      "Domain & hosting setup",
-      "Go-live deployment",
-      "30-day post-launch support"
+      "Go-live deployment & 30-day support"
     ]
   }
 ];
@@ -87,7 +63,7 @@ const TimelineCostSlide = () => {
         </div>
         
         {/* Timeline Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto relative z-10">
           {phases.map((phase, index) => {
             const IconComponent = phase.icon;
             const colorClasses = {
