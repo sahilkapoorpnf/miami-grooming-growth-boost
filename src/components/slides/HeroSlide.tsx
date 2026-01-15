@@ -1,9 +1,15 @@
 import heroDog from "@/assets/hero-dog.png";
+import bitdecentroLogo from "@/assets/bitdecentro-logo.png";
 import { Sparkles, PawPrint } from "lucide-react";
 
 const HeroSlide = () => {
   return (
     <div className="slide bg-gradient-to-br from-primary/5 via-background to-secondary/5 relative">
+      {/* Logo Header */}
+      <div className="absolute top-6 left-6 z-20">
+        <img src={bitdecentroLogo} alt="Bitdecentro" className="h-10 md:h-12" />
+      </div>
+      
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 blob animate-float" />
       <div className="absolute bottom-20 right-20 w-48 h-48 bg-secondary/10 blob-alt animate-float" style={{ animationDelay: "2s" }} />
