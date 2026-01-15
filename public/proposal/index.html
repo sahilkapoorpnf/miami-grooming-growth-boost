@@ -24,6 +24,8 @@
       <button class="nav-dot" data-slide="4" aria-label="Slide 5"></button>
       <button class="nav-dot" data-slide="5" aria-label="Slide 6"></button>
       <button class="nav-dot" data-slide="6" aria-label="Slide 7"></button>
+      <button class="nav-dot" data-slide="7" aria-label="Slide 8"></button>
+      <button class="nav-dot" data-slide="8" aria-label="Slide 9"></button>
     </div>
     <button class="nav-arrow nav-down" id="navDown">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
@@ -33,18 +35,13 @@
   <!-- Slides Container -->
   <main class="slides-container" id="slidesContainer">
     
-    <!-- Slide 1: Hero (matching HeroSlide.tsx) -->
+    <!-- Slide 1: Hero -->
     <section class="slide slide-hero" id="slide-0">
-      <!-- Logo -->
       <div class="logo">
         <img src="../images/bitdecentro-logo.png" alt="Bitdecentro">
       </div>
-      
-      <!-- Decorative blobs (matching React) -->
       <div class="blob blob-1"></div>
       <div class="blob blob-2"></div>
-      
-      <!-- Paw print decoration -->
       <div class="paw-decoration">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="paw-icon"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z"/></svg>
       </div>
@@ -55,35 +52,26 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
             <span>Website Redesign Proposal</span>
           </div>
-          
           <h1 class="animate-slide-up">
             <span class="text-gradient-primary">Miami's</span>
             <br>
             <span>Pet Grooming</span>
           </h1>
-          
-          <p class="subtitle animate-slide-up stagger-2">
-            Transform Your Digital Presence Into a Powerful Business Tool
-          </p>
-          
+          <p class="subtitle animate-slide-up stagger-2">Transform Your Digital Presence Into a Powerful Business Tool</p>
           <div class="investment-card glass animate-slide-up stagger-3">
             <span class="label">Investment</span>
             <p class="price text-gradient-hero">$2,500</p>
           </div>
         </div>
-        
         <div class="hero-image animate-scale-in">
           <div class="image-glow"></div>
           <img src="../images/hero-dog.png" alt="Professional pet grooming" class="animate-float shadow-glow">
         </div>
       </div>
-      
-      <div class="scroll-hint animate-bounce">
-        <span>Scroll to explore</span>
-      </div>
+      <div class="scroll-hint animate-bounce"><span>Scroll to explore</span></div>
     </section>
 
-    <!-- Slide 2: Problem (matching ProblemSlide.tsx) -->
+    <!-- Slide 2: Problem -->
     <section class="slide slide-problem" id="slide-1">
       <div class="slide-content">
         <div class="section-header">
@@ -91,14 +79,9 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
             <span>The Problem</span>
           </div>
-          
           <h2 class="animate-slide-up">Why Your Website Needs a Redesign</h2>
-          
-          <p class="section-subtitle animate-slide-up stagger-2">
-            Your current website is functional, but it's not designed to convert visitors into bookings or support future growth.
-          </p>
+          <p class="section-subtitle animate-slide-up stagger-2">Your current website is functional, but it's not designed to convert visitors into bookings or support future growth.</p>
         </div>
-        
         <div class="problems-grid">
           <div class="problem-card glass-dark animate-slide-up stagger-2">
             <div class="problem-icon-wrapper">
@@ -107,7 +90,6 @@
             <h3>Looks Outdated</h3>
             <p>Competitors are winning the visual first impression</p>
           </div>
-          
           <div class="problem-card glass-dark animate-slide-up stagger-3">
             <div class="problem-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
@@ -115,7 +97,6 @@
             <h3>Not Mobile-Optimized</h3>
             <p>70%+ of pet owners search on mobile devices</p>
           </div>
-          
           <div class="problem-card glass-dark animate-slide-up stagger-4">
             <div class="problem-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -123,7 +104,6 @@
             <h3>No Clear Journey</h3>
             <p>Visitors get confused and leave without booking</p>
           </div>
-          
           <div class="problem-card glass-dark animate-slide-up stagger-5">
             <div class="problem-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -132,17 +112,13 @@
             <p>Losing valuable customer information forever</p>
           </div>
         </div>
-
         <div class="warning-box animate-fade-in stagger-6">
-          <p>
-            This means potential clients are visiting — 
-            <span class="text-destructive">but many are not converting.</span>
-          </p>
+          <p>This means potential clients are visiting — <span class="text-destructive">but many are not converting.</span></p>
         </div>
       </div>
     </section>
 
-    <!-- Slide 3: Solution (matching SolutionSlide.tsx) -->
+    <!-- Slide 3: Solution -->
     <section class="slide slide-solution" id="slide-2">
       <div class="slide-content">
         <div class="section-header">
@@ -150,20 +126,14 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             <span>The Solution</span>
           </div>
-          
           <h2 class="animate-slide-up">What We Will <span class="text-gradient-primary">Build For You</span></h2>
-          
-          <p class="section-subtitle animate-slide-up stagger-2">
-            We won't just "change the look" — we'll rebuild your website to become a powerful business tool.
-          </p>
+          <p class="section-subtitle animate-slide-up stagger-2">We won't just "change the look" — we'll rebuild your website to become a powerful business tool.</p>
         </div>
-
         <div class="solution-layout">
           <div class="solution-image animate-scale-in">
             <div class="image-blur-bg"></div>
             <img src="../images/mobile-grooming.png" alt="Mobile grooming service" class="shadow-card">
           </div>
-          
           <div class="solutions-list">
             <div class="solution-card glass shadow-card animate-slide-up stagger-2">
               <div class="solution-icon-wrapper">
@@ -178,7 +148,6 @@
                 </ul>
               </div>
             </div>
-            
             <div class="solution-card glass shadow-card animate-slide-up stagger-3">
               <div class="solution-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
@@ -192,7 +161,6 @@
                 </ul>
               </div>
             </div>
-            
             <div class="solution-card glass shadow-card animate-slide-up stagger-4">
               <div class="solution-icon-wrapper">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -211,29 +179,133 @@
       </div>
     </section>
 
-    <!-- Slide 4: Before/After (matching BeforeAfterSlide.tsx) -->
-    <section class="slide slide-beforeafter" id="slide-3">
+    <!-- Slide 4: Features (NEW) -->
+    <section class="slide slide-features" id="slide-3">
+      <div class="blob blob-1"></div>
+      <div class="blob-alt blob-2"></div>
+      <div class="slide-content">
+        <div class="section-header">
+          <div class="badge animate-fade-in">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+            <span>Feature Categories</span>
+          </div>
+          <h2 class="animate-slide-up">Everything Your Website <span class="text-gradient-primary">Needs</span></h2>
+          <p class="section-subtitle animate-slide-up stagger-2">A comprehensive feature set organized by category, designed to transform your online presence.</p>
+        </div>
+        <div class="features-categories-grid">
+          <!-- Design & Branding -->
+          <div class="feature-category-card glass shadow-card animate-slide-up stagger-2">
+            <div class="feature-category-header">
+              <div class="feature-category-icon gradient-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
+              </div>
+              <h3>Design & Branding</h3>
+            </div>
+            <div class="feature-category-items">
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Custom Brand Identity</strong><span>Colors, typography, and visuals aligned with your brand</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Professional Layouts</strong><span>Modern, clean design that builds trust instantly</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Visual Hierarchy</strong><span>Guide visitors to take action with strategic design</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Performance & SEO -->
+          <div class="feature-category-card glass shadow-card animate-slide-up stagger-3">
+            <div class="feature-category-header">
+              <div class="feature-category-icon gradient-secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
+              </div>
+              <h3>Performance & SEO</h3>
+            </div>
+            <div class="feature-category-items">
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Lightning Fast Loading</strong><span>Optimized images and code for instant page loads</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>SEO Optimization</strong><span>Meta tags, structured data, and local SEO setup</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Mobile-First Design</strong><span>Perfect experience on phones, tablets, and desktops</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Content Management -->
+          <div class="feature-category-card glass shadow-card animate-slide-up stagger-4">
+            <div class="feature-category-header">
+              <div class="feature-category-icon gradient-accent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg>
+              </div>
+              <h3>Content Management</h3>
+            </div>
+            <div class="feature-category-items">
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Easy Content Updates</strong><span>WordPress-like admin panel for quick changes</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Service Pages</strong><span>Dedicated pages for each grooming service you offer</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Blog & News Section</strong><span>Share pet care tips and business updates</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Trust & Conversions -->
+          <div class="feature-category-card glass shadow-card animate-slide-up stagger-5">
+            <div class="feature-category-header">
+              <div class="feature-category-icon gradient-green">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>Trust & Conversions</h3>
+            </div>
+            <div class="feature-category-items">
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Testimonial Showcase</strong><span>Display customer reviews and ratings prominently</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Before/After Gallery</strong><span>Visual proof of your grooming expertise</span></div>
+              </div>
+              <div class="feature-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                <div><strong>Clear Call-to-Actions</strong><span>One-click booking buttons throughout the site</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 5: Before/After -->
+    <section class="slide slide-beforeafter" id="slide-4">
       <div class="slide-content">
         <div class="section-header">
           <div class="badge animate-fade-in">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
             <span>Transformation</span>
           </div>
-          
           <h2 class="animate-slide-up">Strong Brand & <span class="text-gradient-hero">Trust Building</span></h2>
-          
-          <p class="section-subtitle animate-slide-up stagger-2">
-            Just like your grooming transforms pets, we'll transform your online presence.
-          </p>
+          <p class="section-subtitle animate-slide-up stagger-2">Just like your grooming transforms pets, we'll transform your online presence.</p>
         </div>
-
         <div class="beforeafter-image animate-scale-in stagger-3">
           <div class="image-blur-bg"></div>
           <img src="../images/before-after.png" alt="Before and after grooming transformation" class="shadow-card">
           <div class="label-before glass">Before</div>
           <div class="label-after glass">After</div>
         </div>
-
         <div class="features-grid">
           <div class="feature-card shadow-card animate-slide-up stagger-4">
             <div class="feature-icon-wrapper">
@@ -242,7 +314,6 @@
             <h3>Clear Service Pages</h3>
             <p>Professional layout for each service</p>
           </div>
-          
           <div class="feature-card shadow-card animate-slide-up stagger-5">
             <div class="feature-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -250,7 +321,6 @@
             <h3>Before/After Visuals</h3>
             <p>Showcase your amazing work</p>
           </div>
-          
           <div class="feature-card shadow-card animate-slide-up stagger-6">
             <div class="feature-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
@@ -262,29 +332,125 @@
       </div>
     </section>
 
-    <!-- Slide 5: Future Ready (matching FutureSlide.tsx) -->
-    <section class="slide slide-future" id="slide-4">
+    <!-- Slide 6: Bitdecentro Help (NEW) -->
+    <section class="slide slide-bitdecentro" id="slide-5">
+      <div class="blob blob-1"></div>
+      <div class="blob-alt blob-2"></div>
+      <div class="slide-content">
+        <div class="section-header">
+          <div class="badge-with-logo animate-fade-in">
+            <img src="../images/bitdecentro-logo.png" alt="Bitdecentro" class="badge-logo">
+            <span>How We Help</span>
+          </div>
+          <h2 class="animate-slide-up">Your Partner in <span class="text-gradient-hero">Digital Growth</span></h2>
+          <p class="section-subtitle animate-slide-up stagger-2">Bitdecentro transforms your online presence with a strategic approach that drives real business results.</p>
+        </div>
+        <div class="bitdecentro-layout">
+          <!-- Our Process -->
+          <div class="process-section animate-slide-up stagger-2">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+              Our Process
+            </h3>
+            <div class="process-steps">
+              <div class="process-step glass-dark">
+                <div class="process-step-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                </div>
+                <div class="process-step-content">
+                  <span class="step-number">01</span>
+                  <h4>Discovery & Strategy</h4>
+                  <p>We analyze your business goals, target audience, and competition to create a winning strategy.</p>
+                </div>
+              </div>
+              <div class="process-step glass-dark">
+                <div class="process-step-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="process-step-content">
+                  <span class="step-number">02</span>
+                  <h4>Design & Development</h4>
+                  <p>Custom design crafted to match your brand, followed by pixel-perfect development.</p>
+                </div>
+              </div>
+              <div class="process-step glass-dark">
+                <div class="process-step-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                </div>
+                <div class="process-step-content">
+                  <span class="step-number">03</span>
+                  <h4>Launch & Optimize</h4>
+                  <p>We launch your new site and continuously optimize for better conversions.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Why Bitdecentro -->
+          <div class="why-bitdecentro-section animate-slide-up stagger-3">
+            <h3>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              Why Choose Bitdecentro
+            </h3>
+            <div class="why-list glass-dark">
+              <div class="why-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>10+ years of web development experience</span></div>
+              <div class="why-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Specialized in small business growth</span></div>
+              <div class="why-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Full-service: design, development & support</span></div>
+              <div class="why-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Transparent pricing with no hidden fees</span></div>
+              <div class="why-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Ongoing maintenance & updates included</span></div>
+              <div class="why-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><span>Dedicated project manager for your account</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Business Impact Stats -->
+        <div class="business-impact-stats animate-slide-up stagger-4">
+          <div class="impact-stat glass-dark">
+            <div class="impact-stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+            </div>
+            <div class="stat-value text-gradient-hero">2-3x</div>
+            <p class="stat-label">More Leads</p>
+          </div>
+          <div class="impact-stat glass-dark">
+            <div class="impact-stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+            </div>
+            <div class="stat-value text-gradient-hero">70%</div>
+            <p class="stat-label">More Traffic</p>
+          </div>
+          <div class="impact-stat glass-dark">
+            <div class="impact-stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="stat-value text-gradient-hero">5hrs</div>
+            <p class="stat-label">Saved Weekly</p>
+          </div>
+          <div class="impact-stat glass-dark">
+            <div class="impact-stat-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <div class="stat-value text-gradient-hero">100%</div>
+            <p class="stat-label">Brand Aligned</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide 7: Future Ready -->
+    <section class="slide slide-future" id="slide-6">
       <div class="blob blob-2"></div>
       <div class="blob blob-3"></div>
-      
       <div class="slide-content">
         <div class="section-header">
           <div class="badge badge-secondary animate-fade-in">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
             <span>Future Ready</span>
           </div>
-          
           <h2 class="animate-slide-up">Built For <span class="text-gradient-primary">Growth</span></h2>
-          
-          <p class="section-subtitle animate-slide-up stagger-2">
-            You may not want a booking app today — and that's perfectly fine. But your website will be ready when you are.
-          </p>
+          <p class="section-subtitle animate-slide-up stagger-2">You may not want a booking app today — and that's perfectly fine. But your website will be ready when you are.</p>
         </div>
-
         <div class="future-layout">
           <div class="future-content">
             <h3 class="animate-slide-up stagger-2">Your Future Options</h3>
-            
             <div class="future-features-grid">
               <div class="future-feature glass shadow-card animate-slide-up stagger-3">
                 <div class="future-feature-icon">
@@ -292,21 +458,18 @@
                 </div>
                 <span>Add online scheduling</span>
               </div>
-              
               <div class="future-feature glass shadow-card animate-slide-up stagger-4">
                 <div class="future-feature-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                 </div>
                 <span>Create customer accounts</span>
               </div>
-              
               <div class="future-feature glass shadow-card animate-slide-up stagger-5">
                 <div class="future-feature-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
                 </div>
                 <span>Launch your own booking app</span>
               </div>
-              
               <div class="future-feature glass shadow-card animate-slide-up stagger-6">
                 <div class="future-feature-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
@@ -314,29 +477,18 @@
                 <span>Own your customer database</span>
               </div>
             </div>
-
             <div class="why-box animate-fade-in stagger-6">
               <h4>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(330, 85%, 55%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
                 Why This Matters
               </h4>
               <ul>
-                <li>
-                  <span class="bullet"></span>
-                  <span>No commission fees to third-party apps</span>
-                </li>
-                <li>
-                  <span class="bullet"></span>
-                  <span>No losing clients to other platforms</span>
-                </li>
-                <li>
-                  <span class="bullet"></span>
-                  <span>Your customer data stays 100% yours</span>
-                </li>
+                <li><span class="bullet"></span><span>No commission fees to third-party apps</span></li>
+                <li><span class="bullet"></span><span>No losing clients to other platforms</span></li>
+                <li><span class="bullet"></span><span>Your customer data stays 100% yours</span></li>
               </ul>
             </div>
           </div>
-          
           <div class="future-image animate-scale-in">
             <div class="image-glow"></div>
             <img src="../images/app-mockup.png" alt="Future app mockup" class="animate-float shadow-glow">
@@ -345,156 +497,83 @@
       </div>
     </section>
 
-    <!-- Slide 6: Deliverables (matching DeliverablesSlide.tsx) -->
-    <section class="slide slide-deliverables" id="slide-5">
+    <!-- Slide 8: Deliverables -->
+    <section class="slide slide-deliverables" id="slide-7">
       <div class="slide-content">
         <div class="section-header">
           <div class="badge badge-accent animate-fade-in">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
             <span>What You Get</span>
           </div>
-          
           <h2 class="animate-slide-up">Complete <span class="text-gradient-hero">Package</span></h2>
         </div>
-
         <div class="deliverables-layout">
-          <!-- Deliverables -->
           <div class="deliverables-card glass shadow-card animate-slide-up stagger-2">
             <h3>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="hsl(330, 85%, 55%)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
               Deliverables
             </h3>
-            
             <div class="deliverables-grid">
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>Modern website redesign</span>
-              </div>
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>Mobile-first layout</span>
-              </div>
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>Faster loading speed</span>
-              </div>
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>SEO-ready structure</span>
-              </div>
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>Conversion-optimized booking flow</span>
-              </div>
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>Trust-building design</span>
-              </div>
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>Future-ready backend structure</span>
-              </div>
-              <div class="deliverable-item">
-                <div class="deliverable-check">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-                </div>
-                <span>Google tracking & analytics</span>
-              </div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Modern website redesign</span></div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Mobile-first layout</span></div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Faster loading speed</span></div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>SEO-ready structure</span></div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Conversion-optimized booking flow</span></div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Trust-building design</span></div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Future-ready backend structure</span></div>
+              <div class="deliverable-item"><div class="deliverable-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><span>Google tracking & analytics</span></div>
             </div>
           </div>
-
-          <!-- Business Impact -->
           <div class="impact-list">
             <h3 class="animate-slide-up stagger-3">Business Impact</h3>
-            
             <div class="impact-card shadow-card animate-slide-up stagger-4">
               <div class="impact-icon">↑</div>
-              <div>
-                <h4>Visitor Conversions</h4>
-                <p>More bookings from website traffic</p>
-              </div>
+              <div><h4>Visitor Conversions</h4><p>More bookings from website traffic</p></div>
             </div>
-            
             <div class="impact-card shadow-card animate-slide-up stagger-5">
               <div class="impact-icon">★</div>
-              <div>
-                <h4>Brand Trust</h4>
-                <p>Professional appearance builds confidence</p>
-              </div>
+              <div><h4>Brand Trust</h4><p>Professional appearance builds confidence</p></div>
             </div>
-            
             <div class="impact-card shadow-card animate-slide-up stagger-6">
               <div class="impact-icon">◎</div>
-              <div>
-                <h4>Google Visibility</h4>
-                <p>Better SEO for local searches</p>
-              </div>
+              <div><h4>Google Visibility</h4><p>Better SEO for local searches</p></div>
             </div>
-            
             <div class="impact-card shadow-card animate-slide-up stagger-6">
               <div class="impact-icon">→</div>
-              <div>
-                <h4>Growth Ready</h4>
-                <p>Prepared for future online bookings</p>
-              </div>
+              <div><h4>Growth Ready</h4><p>Prepared for future online bookings</p></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Slide 7: Investment (matching InvestmentSlide.tsx) -->
-    <section class="slide slide-investment" id="slide-6">
-      <!-- Decorative blobs -->
+    <!-- Slide 9: Investment -->
+    <section class="slide slide-investment" id="slide-8">
       <div class="blob blob-1"></div>
       <div class="blob-alt blob-2"></div>
-      
+      <div id="confetti"></div>
       <div class="slide-content">
         <div class="section-header">
           <div class="badge animate-fade-in" style="background: hsl(var(--primary) / 0.2);">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/></svg>
             <span>Let's Get Started</span>
           </div>
-          
           <h2 class="animate-slide-up">Ready to Transform Your Business?</h2>
         </div>
-
         <div class="investment-box">
           <div class="investment-content glass-dark animate-scale-in stagger-2 animate-pulse-glow">
             <div class="price-section">
               <p class="label">One-Time Investment</p>
               <div class="big-price text-gradient-hero">$2,500</div>
             </div>
-            
             <div class="divider"></div>
-            
-            <p class="description">
-              This is not just a redesign — it's setting up 
-              <strong>Miami's Pet Grooming</strong>
-              for growth, control, and long-term customer ownership.
-            </p>
-            
+            <p class="description">This is not just a redesign — it's setting up <strong>Miami's Pet Grooming</strong> for growth, control, and long-term customer ownership.</p>
             <div class="cta-buttons">
               <a href="tel:+17862220592" class="btn-primary shadow-glow">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 Let's Talk
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </a>
-              
               <a href="mailto:info@miamispetgrooming.com" class="btn-outline">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                 Email Us
@@ -502,13 +581,11 @@
             </div>
           </div>
         </div>
-
         <div class="footer-text animate-fade-in stagger-5">
           <div class="crafted">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             <span>Crafted with care for Miami's Pet Grooming</span>
           </div>
-          
           <p class="tagline">Pampering Your Pet Since '98</p>
         </div>
       </div>

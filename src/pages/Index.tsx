@@ -3,7 +3,9 @@ import SlideNavigation from "@/components/slides/SlideNavigation";
 import HeroSlide from "@/components/slides/HeroSlide";
 import ProblemSlide from "@/components/slides/ProblemSlide";
 import SolutionSlide from "@/components/slides/SolutionSlide";
+import FeaturesSlide from "@/components/slides/FeaturesSlide";
 import BeforeAfterSlide from "@/components/slides/BeforeAfterSlide";
+import BitdecentroHelpSlide from "@/components/slides/BitdecentroHelpSlide";
 import FutureSlide from "@/components/slides/FutureSlide";
 import DeliverablesSlide from "@/components/slides/DeliverablesSlide";
 import InvestmentSlide from "@/components/slides/InvestmentSlide";
@@ -12,7 +14,9 @@ const slides = [
   HeroSlide,
   ProblemSlide,
   SolutionSlide,
+  FeaturesSlide,
   BeforeAfterSlide,
+  BitdecentroHelpSlide,
   FutureSlide,
   DeliverablesSlide,
   InvestmentSlide
